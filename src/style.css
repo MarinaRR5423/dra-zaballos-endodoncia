@@ -398,6 +398,11 @@ p {
   object-fit: cover;
 }
 
+.doctor-copy .link-linkedin {
+  display: inline-block;
+  margin-top: 28px;
+}
+
 .credentials {
   list-style: none;
   margin: 28px 0 0;
