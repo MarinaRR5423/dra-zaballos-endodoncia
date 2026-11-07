@@ -3,6 +3,10 @@ dist
 dist-ssr
 *.local
 
+# Source material and logo drafts, not part of the site
+Imagenes Web/
+branding/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
