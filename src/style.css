@@ -250,28 +250,43 @@ p {
   justify-content: center;
 }
 
-.hero-svg {
+.hero-photo {
+  position: relative;
   width: min(100%, 380px);
-  color: var(--gold-dark);
+  aspect-ratio: 1;
+}
+
+.hero-photo::before,
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+
+.hero-photo::before {
+  inset: 0;
+}
+
+.hero-photo::after {
+  inset: 11%;
+}
+
+.hero-photo img {
+  position: absolute;
+  inset: 17%;
+  width: 66%;
+  height: 66%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--sand);
+  box-shadow: 0 0 0 1px var(--gold);
 }
 
 .ring {
   fill: none;
   stroke: var(--line);
   stroke-width: 1;
-}
-
-.tooth {
-  fill: var(--sand);
-  stroke: var(--gold-dark);
-  stroke-width: 1.4;
-}
-
-.tooth-line {
-  fill: none;
-  stroke: var(--gold-dark);
-  stroke-width: 1.2;
-  stroke-linecap: round;
 }
 
 /* Stats */
