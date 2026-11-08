@@ -5,6 +5,8 @@
   --ink-soft: #48564f;
   --gold: #a97e4b;
   --gold-dark: #8a6539;
+  --klein: #002fa7;
+  --klein-dark: #001f73;
   --line: #e2d8c4;
   --white: #ffffff;
 
@@ -106,22 +108,22 @@ p {
 }
 
 .btn-primary {
-  background: var(--ink);
+  background: var(--klein);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background: var(--gold-dark);
+  background: var(--klein-dark);
 }
 
 .btn-ghost {
   background: transparent;
-  color: var(--ink);
-  border-color: var(--ink);
+  color: var(--klein);
+  border-color: var(--klein);
 }
 
 .btn-ghost:hover {
-  background: var(--ink);
+  background: var(--klein);
   color: var(--white);
 }
 
@@ -151,7 +153,7 @@ p {
 }
 
 .logo-mark {
-  height: 46px;
+  height: 62px;
   width: auto;
   flex-shrink: 0;
 }
@@ -172,7 +174,7 @@ p {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold-dark);
+  color: var(--klein);
 }
 
 .main-nav {
@@ -189,7 +191,7 @@ p {
 }
 
 .main-nav a:hover {
-  color: var(--ink);
+  color: var(--klein);
 }
 
 .header-actions {
@@ -270,6 +272,8 @@ p {
 
 .hero-photo::after {
   inset: 11%;
+  border-color: var(--klein);
+  opacity: 0.35;
 }
 
 .hero-photo img {
@@ -280,7 +284,7 @@ p {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--sand);
-  box-shadow: 0 0 0 1px var(--gold);
+  box-shadow: 0 0 0 1px var(--klein);
 }
 
 .ring {
@@ -311,7 +315,7 @@ p {
 .stat-num {
   font-family: var(--serif);
   font-size: 2rem;
-  color: var(--ink);
+  color: var(--klein);
 }
 
 .stat-label {
@@ -470,12 +474,12 @@ p {
   font-size: 0.92rem;
   font-weight: 500;
   text-decoration: none;
-  color: var(--gold-dark);
+  color: var(--klein);
   width: fit-content;
 }
 
 .link-arrow:hover {
-  color: var(--ink);
+  color: var(--klein-dark);
 }
 
 /* Contact */
@@ -566,6 +570,10 @@ p {
 }
 
 /* Footer */
+.site-footer .logo-mark {
+  height: 70px;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 48px 0;
