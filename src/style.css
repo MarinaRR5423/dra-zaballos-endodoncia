@@ -151,9 +151,8 @@ p {
 }
 
 .logo-mark {
-  width: 30px;
-  height: 30px;
-  color: var(--gold-dark);
+  height: 46px;
+  width: auto;
   flex-shrink: 0;
 }
 
