@@ -482,6 +482,15 @@ p {
   color: var(--klein-dark);
 }
 
+#cabinet .section-lead {
+  max-width: none;
+}
+
+#cabinet .link-arrow {
+  display: inline-block;
+  margin: 14px 0 36px;
+}
+
 /* Contact */
 .contact-section {
   border-top: 1px solid var(--line);
