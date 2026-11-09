@@ -632,8 +632,108 @@ p {
   transform: translateY(0);
 }
 
+/* Page adressage */
+.page-head {
+  padding: 88px 0 24px;
+}
+
+.page-head h1 {
+  margin-bottom: 0;
+}
+
+.essentials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 36px 40px;
+  background: var(--sand);
+  border-left: 3px solid var(--klein);
+}
+
+.essentials h2 {
+  max-width: 32ch;
+  margin-bottom: 10px;
+}
+
+.essentials p:last-child {
+  color: var(--ink-soft);
+}
+
+.referral-grid {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.referral-list li {
+  margin-bottom: 18px;
+}
+
+.referral-note {
+  margin-top: 40px;
+  max-width: 62ch;
+  padding-left: 20px;
+  border-left: 1px solid var(--gold);
+  color: var(--ink-soft);
+}
+
+.referral-after {
+  margin-top: 48px;
+}
+
+.steps {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.step-num {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--gold-dark);
+}
+
+.steps .link-arrow {
+  margin-top: auto;
+  overflow-wrap: anywhere;
+}
+
+.link-row {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.link-row .link-arrow {
+  margin-top: 0;
+}
+
+.contact-cta .hero-actions {
+  margin-top: 28px;
+}
+
 /* Responsive */
 @media (max-width: 960px) {
+  .essentials {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .referral-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
   .main-nav {
     position: fixed;
     inset: 68px 0 0 0;

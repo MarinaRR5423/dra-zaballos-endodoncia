@@ -34,8 +34,10 @@ document.querySelector('#year').textContent = new Date().getFullYear()
 const form = document.querySelector('#contact-form')
 const formNote = document.querySelector('#form-note')
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault()
-  formNote.textContent = 'Merci, votre demande a bien été enregistrée. Le cabinet vous recontactera rapidement.'
-  form.reset()
-})
+if (form && formNote) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    formNote.textContent = 'Merci, votre demande a bien été enregistrée. Le cabinet vous recontactera rapidement.'
+    form.reset()
+  })
+}
