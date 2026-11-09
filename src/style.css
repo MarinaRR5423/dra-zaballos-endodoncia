@@ -498,14 +498,38 @@ p {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 64px;
+  align-items: center;
+}
+
+.contact-phone {
+  display: inline-block;
+  margin-top: 28px;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.1;
+  color: var(--klein);
+  text-decoration: none;
+}
+
+.contact-phone:hover {
+  color: var(--klein-dark);
+}
+
+.contact-hours {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
 }
 
 .contact-details {
-  margin: 30px 0 0;
+  margin: 0;
   display: grid;
-  gap: 20px;
+  gap: 24px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 40px;
 }
 
 .contact-details dt {
@@ -528,54 +552,6 @@ p {
 
 .contact-details a:hover {
   color: var(--gold-dark);
-}
-
-.contact-form {
-  background: var(--white);
-  border: 1px solid var(--line);
-  padding: 36px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-row label {
-  font-size: 0.82rem;
-  color: var(--ink);
-  font-weight: 500;
-}
-
-.form-row input,
-.form-row textarea {
-  font: inherit;
-  padding: 11px 14px;
-  border: 1px solid var(--line);
-  background: var(--ivory);
-  color: var(--ink);
-  border-radius: 2px;
-  resize: vertical;
-}
-
-.form-row input:focus,
-.form-row textarea:focus {
-  outline: none;
-  border-color: var(--gold-dark);
-}
-
-.contact-form .btn {
-  margin-top: 6px;
-}
-
-.form-note {
-  font-size: 0.88rem;
-  color: var(--gold-dark);
-  min-height: 1.2em;
 }
 
 /* Footer */
