@@ -643,6 +643,7 @@ p {
 
 .referral-after {
   margin-top: 48px;
+  max-width: none;
   font-size: 1.5rem;
 }
 
