@@ -228,6 +228,6 @@ body { background: var(--ivory); }
   .cv2 .cv2-grid { grid-template-columns: 1fr; gap: 32px; }
   .cv2 .cv2-visual { margin-left: 0; }
   .cv2 .cv2-photo { width: 100%; border-top-left-radius: 100px; }
-  .cv2 .contact-details { position: static; margin-top: -24px; }
+  .cv2 .contact-details { position: static; margin-top: 24px; }
   .footer-nav { flex-wrap: wrap; gap: 10px 20px; }
 }

@@ -385,8 +385,7 @@ p {
   object-fit: cover;
 }
 
-.doctor-copy .link-linkedin {
-  display: inline-block;
+.doctor-copy .doctor-links {
   margin-top: 28px;
 }
 
