@@ -47,7 +47,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="theme-a">
     <header class="site-header">
       <div class="wrap header-inner">
         <a class="logo" href="#top">
@@ -76,7 +76,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero hero-dark">
         <div class="wrap hero-inner">
           <div class="hero-copy" data-reveal>
             <p class="eyebrow">Cabinet d'endodontie — Bordeaux</p>
@@ -91,22 +91,24 @@
             </div>
           </div>
           <div class="hero-visual">
-            <div class="hero-photo">
-              <img src="/images/dra-zaballos-microscope.jpg" alt="Maria Zaballos travaillant au microscope opératoire" width="800" height="800" />
-            </div>
+            <img class="hero-portrait" src="/images/dra-zaballos-microscope.jpg" alt="Maria Zaballos travaillant au microscope opératoire" width="800" height="800" />
           </div>
         </div>
       </section>
 
-      <section class="section" id="specialite">
+      <section class="section section-light" id="specialite">
+        <div class="wrap spec-top">
+                    <div class="spec-copy" data-reveal>
+            <p class="eyebrow">La spécialité</p>
+            <h2>Une discipline de précision, dédiée à la conservation de vos dents naturelles</h2>
+            <p class="section-lead">
+              L'endodontie est la spécialité de la chirurgie dentaire qui traite les tissus internes
+              de la dent — la pulpe et les racines. Un exercice exigeant, pratiqué au
+              microscope opératoire pour garantir précision et confort.
+            </p>
+          </div>
+        </div>
         <div class="wrap">
-          <p class="eyebrow" data-reveal>La spécialité</p>
-          <h2 data-reveal>Une discipline de précision, dédiée à la conservation de vos dents naturelles</h2>
-          <p class="section-lead" data-reveal>
-            L'endodontie est la spécialité de la chirurgie dentaire qui traite les tissus internes
-            de la dent — la pulpe et les racines. Un exercice exigeant, pratiqué au
-            microscope opératoire pour garantir précision et confort.
-          </p>
 
           <div class="card-grid">
             <article class="card" data-reveal>
@@ -137,8 +139,9 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="cabinet">
-        <div class="wrap">
+      <section class="section sec-dark" id="cabinet">
+        <div class="wrap cabinet-grid">
+          <div class="cabinet-copy">
           <p class="eyebrow" data-reveal>Le cabinet</p>
           <h2 data-reveal>Un plateau technique pensé pour la précision</h2>
           <p class="section-lead" data-reveal>
@@ -149,7 +152,13 @@
             <img src="/images/logo-contrepois.svg" alt="Logo de DEC Cabinet Dentaire" width="68" height="68" />
             <span>Découvrir DEC Cabinet Dentaire →</span>
           </a>
+          </div>
 
+          <figure class="cabinet-photo" data-reveal>
+            <img src="/images/reception-dec.jpg" alt="Accueil du cabinet Dental Esthetic Concept à Bordeaux" width="1000" height="1333" loading="lazy" />
+          </figure>
+
+          <div class="cabinet-features">
           <div class="feature-row" data-reveal>
             <div class="feature-visual" aria-hidden="true">
               <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,10 +202,11 @@
                 sécurité à chaque étape du soin.</p>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="docteure">
+      <section class="section section-light" id="docteure">
         <div class="wrap doctor-grid">
           <figure class="doctor-portrait" data-reveal>
             <img src="/images/dra-zaballos.jpg" alt="Portrait de Maria Zaballos, endodontiste à Bordeaux" width="652" height="764" loading="lazy" />
@@ -222,7 +232,7 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="praticiens">
+      <section class="section sec-dark" id="praticiens">
         <div class="wrap">
           <p class="eyebrow" data-reveal>Patients &amp; confrères</p>
           <h2 data-reveal>Un accompagnement pour chacun</h2>
@@ -245,9 +255,9 @@
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
-        <div class="wrap contact-grid">
-          <div class="contact-info" data-reveal>
+      <section class="section contact-section section-light cv2" id="contact">
+        <div class="wrap cv2-grid">
+          <div data-reveal>
             <p class="eyebrow">Contact</p>
             <h2>Prendre rendez-vous</h2>
             <p class="section-lead">
@@ -257,22 +267,24 @@
             <a class="contact-phone" href="tel:+33557107957">05 57 10 79 57</a>
             <p class="contact-hours">Du lundi au vendredi, de 9h à 18h30</p>
           </div>
-
-          <dl class="contact-details" data-reveal>
-            <div>
-              <dt>Adresse</dt>
-              <dd>37, rue Esprit des Lois<br />33000 Bordeaux</dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:dec.cabinetdentaire@gmail.com">dec.cabinetdentaire@gmail.com</a></dd>
-            </div>
-          </dl>
+          <div class="cv2-visual" data-reveal>
+            <figure class="cv2-photo"><img src="/images/microscope-canele.webp" alt="Microscope opératoire cadrant un cannelé, clin d'œil à Bordeaux" width="1400" height="933" loading="lazy" /></figure>
+            <dl class="contact-details">
+              <div>
+                <dt>Adresse</dt>
+                <dd>37, rue Esprit des Lois<br />33000 Bordeaux</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:dec.cabinetdentaire@gmail.com">dec.cabinetdentaire@gmail.com</a></dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer foot-dark">
       <div class="wrap footer-inner">
         <a class="logo" href="#top">
           <img class="logo-mark" src="/images/logo-klein.png" alt="" width="360" height="360" />

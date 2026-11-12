@@ -1,4 +1,5 @@
 import './style.css'
+import './redesign.css'
 
 const navToggle = document.querySelector('#nav-toggle')
 const mainNav = document.querySelector('#main-nav')
