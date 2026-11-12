@@ -209,6 +209,9 @@ body { background: var(--ivory); }
   box-shadow: 0 18px 40px rgba(10, 10, 13, 0.14);
 }
 
+.contact-details .map-link { color: inherit; }
+.contact-details .map-link:hover { color: var(--klein); text-decoration: underline; text-underline-offset: 4px; }
+
 /* ---- pages intérieures (adressage) ---- */
 .page-head { padding: 88px 0 72px; }
 .page-head .section-lead { max-width: 60ch; }
