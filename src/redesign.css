@@ -207,6 +207,7 @@ body { background: var(--ivory); }
   grid-template-columns: 1fr;
   gap: 16px;
   box-shadow: 0 18px 40px rgba(10, 10, 13, 0.14);
+  border-top-right-radius: 36px;
 }
 
 .contact-details .map-link { color: inherit; }
@@ -234,3 +235,24 @@ body { background: var(--ivory); }
   .cv2 .contact-details { position: static; margin-top: 24px; }
   .footer-nav { flex-wrap: wrap; gap: 10px 20px; }
 }
+
+/* ---- réseaux sociaux (icônes) ---- */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+.social-row { display: flex; gap: 12px; }
+.social-row .social-link {
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+}
+.social-row .social-link:hover { color: #fff; background: var(--klein-solid, #1236d6); border-color: var(--klein-solid, #1236d6); }
+.footer-nav .social-link { color: var(--ink-soft); }
+.footer-nav .social-link:hover { color: #fff; }
+.footer-nav .social-link svg { width: 20px; height: 20px; }
